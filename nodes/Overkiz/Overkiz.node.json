@@ -1,19 +1,6 @@
 {
-	"node": "n8n-nodes-base.overkiz",
+	"node": "n8n-nodes-overkiz-tahoma",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Home", "IoT"],
-	"resources": {
-		"credentialDocumentation": [
-			{
-				"url": "https://docs.n8n.io/credentials/overkiz"
-			}
-		],
-		"primaryDocumentation": [
-			{
-				"url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.overkiz/"
-			}
-		],
-		"generic": []
-	}
+	"categories": ["Home", "IoT"]
 }

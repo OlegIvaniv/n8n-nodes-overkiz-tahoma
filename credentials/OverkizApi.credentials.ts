@@ -5,7 +5,7 @@ export class OverkizApi implements ICredentialType {
 
 	displayName = 'Overkiz API';
 
-	documentationUrl = 'overkiz';
+	documentationUrl = 'https://github.com/OlegIvaniv/n8n-nodes-overkiz-tahoma/blob/master/README.md';
 
 	properties: INodeProperties[] = [
 		{

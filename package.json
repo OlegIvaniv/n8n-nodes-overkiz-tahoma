@@ -1,12 +1,12 @@
 {
   "name": "n8n-nodes-overkiz-tahoma",
   "version": "0.1.0",
-  "description": "",
+  "description": "This is an n8n community node. It lets you use Overkiz (Tahoma) in your n8n workflows.",
   "keywords": [
     "n8n-community-node-package",
     "overkiz",
     "tahoma",
-    "somfy",
+    "somfy"
   ],
   "license": "MIT",
   "author": {
@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "change-case": "^4.1.2",
+    "eslint": "^8.46.0",
     "overkiz-api": "^2.0.1"
   }
 }

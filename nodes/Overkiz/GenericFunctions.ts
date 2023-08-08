@@ -36,7 +36,6 @@ function simplifyObject(object: APIObject) {
 		exec: async (...commands: Command[]) => object.exec(...commands),
 		refresh: async (stateName: string) => object.refreshState(stateName),
 		refreshAll: async () => object.refreshStates(),
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		getStateValue: (stateName: string) => object.getStateValue(stateName),
 	};
 

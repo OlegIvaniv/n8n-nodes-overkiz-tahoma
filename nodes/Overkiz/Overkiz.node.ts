@@ -80,16 +80,16 @@ export class Overkiz implements INodeType {
 						name: 'Get By Type',
 						value: 'getByType',
 						description: 'Get objects by type',
-						action: 'Get By Type an object',
+						action: 'Get by type an object',
 					},
 					{
 						name: 'Execute Command',
 						value: 'executeCommand',
 						description: 'Executes a command on object',
-						action: 'Execute Command an object',
+						action: 'Execute command an object',
 					},
 				],
-				default: 'get',
+				default: 'getAll',
 			},
 			{
 				displayName: 'Object Type Name or ID',
@@ -193,7 +193,6 @@ export class Overkiz implements INodeType {
 				const objectData = await getSingleObject.call(this, objectURL);
 				if (!objectData || !supportedDeviceTypes.includes(objectData.widget)) return [];
 
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 				// @ts-ignore
 				const commands = await getObjectAvailableCommands.call(this, objectData.widget);
 
@@ -257,7 +256,7 @@ export class Overkiz implements INodeType {
 
 				const objectData = await getSingleObject.call(this, objectURL);
 				if (!objectData) return [this.helpers.returnJsonArray([])];
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+
 				// @ts-ignore
 				const commands = await getObjectAvailableCommands.call(this, objectData.widget);
 				const command = commands.find((c) => c.value === commandName);
