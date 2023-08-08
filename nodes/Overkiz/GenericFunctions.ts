@@ -57,11 +57,9 @@ export async function getOverkizApi(
 
 	const instantiatedApi = apiInstances[email];
 	if (instantiatedApi) {
-		console.log('Singleton API instance found for email:', email);
 		return instantiatedApi;
 	}
 
-	console.log('Creating new API instance for email:', email);
 
 	const api = new API({
 		host: hostname,

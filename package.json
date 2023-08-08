@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-overkiz-tahoma",
+  "name": "@olegivaniv/n8n-nodes-overkiz-tahoma",
   "version": "0.1.0",
   "description": "This is an n8n community node. It lets you use Overkiz (Tahoma) in your n8n workflows.",
   "keywords": [
@@ -9,13 +9,10 @@
     "somfy"
   ],
   "license": "MIT",
-  "author": {
-    "name": "Oleg Ivaniv",
-    "email": "me@olegivaniv.com"
-  },
+  "author": "Oleg Ivaniv <me@olegivaniv.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OlegIvaniv/n8n-nodes-overkiz-tahoma"
+    "url": "git+https://github.com/OlegIvaniv/n8n-nodes-overkiz-tahoma.git"
   },
   "main": "index.js",
   "scripts": {
@@ -53,5 +50,9 @@
     "change-case": "^4.1.2",
     "eslint": "^8.46.0",
     "overkiz-api": "^2.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/OlegIvaniv/n8n-nodes-overkiz-tahoma/issues"
+  },
+  "homepage": "https://github.com/OlegIvaniv/n8n-nodes-overkiz-tahoma#readme"
 }

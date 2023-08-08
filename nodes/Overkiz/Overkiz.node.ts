@@ -264,9 +264,6 @@ export class Overkiz implements INodeType {
 
 				if (!command || execCommands.length === 0) return [this.helpers.returnJsonArray([])];
 
-				console.log('Execution command:', command.name, 'on object:', objectData.name);
-				console.log('Object state before execution:', objectData.states);
-
 				await objectData.exec(...execCommands);
 				await objectData.refreshAll();
 
